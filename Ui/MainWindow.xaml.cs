@@ -61,7 +61,7 @@ namespace Ui
             List<double> inp = new List<double>();
             foreach (Number n in input)
                 inp.Add(n.value);
-            Awnser.Text = Convert.ToString(Select.Quick.QuickSelect(inp, input.Count, Convert.ToInt32(Ktext.Text)));
+            Answer.Text = Convert.ToString(Select.Quick.QuickSelect(inp, input.Count, Convert.ToInt32(Ktext.Text)));
             DGrid.SelectedItem = inp;
         }
         private void Close_Click(object sender, RoutedEventArgs e)

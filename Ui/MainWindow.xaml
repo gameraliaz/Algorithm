@@ -112,8 +112,8 @@
                             Margin="5"
                             Style="{StaticResource brnModern}"/>
                     <TextBlock 
-                        x:Name="Awnser" 
-                        Text="Awnser" 
+                        x:Name="Answer" 
+                        Text="Answer" 
                         FontSize="18"
                         HorizontalAlignment="Center" 
                         Margin="5"
