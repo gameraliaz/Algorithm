@@ -50,6 +50,27 @@
             else
                 return QuickSelect(A, upper + 1, last, k);
         }
+        public static int CircularQuickSelect(List<int> A, int first, int last,int k)
+        {
+            if (first > last)
+                return -1;
+            int mid = (first + last) / 2;
+            if (A[mid] == k)
+                return mid;
+            if (A[first] <= A[mid])
+            {
+                if (k >= A[first] && k <= A[mid])
+                    return CircularQuickSelect(A, first, mid - 1, k);
+                else
+                    return CircularQuickSelect(A, mid + 1, last, k);
+            }
+            else
+            {
+                if (k >= A[mid] && k <= A[last])
+                    return CircularQuickSelect(A, mid + 1, last, k);
+                else
+                    return CircularQuickSelect(A, first, mid - 1, k);
+            }
+        }
     }
-
 }
